@@ -1,0 +1,173 @@
+@import "../variables/variables";
+
+@media screen and (max-width: 992px){
+  .main {
+    .our_story {
+      .our_story_content {
+        margin-left: 15px;
+      }
+    }
+
+    .expertise {
+      .section_item {
+        padding: 0 15px;
+
+        .expertise_item {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .our_works {
+      .our_works_title {
+        padding: 0 15px;
+      }
+
+      .our_works_link {
+        margin: 0 15px;
+      }
+
+      .our_works_tape {
+        .works_tape {
+          .works_tape_bottom {
+            display: none;
+          }
+
+          .works_tape_top {
+            flex-wrap: wrap;
+
+            .works_tape_present {
+              width: 33.333%;
+            }
+          }
+        }
+      }
+    }
+
+    .rest_information {
+      .feedback {
+        margin-left: 15px;
+      }
+
+      .partners {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .our_story {
+      .our_story_logo {
+        width: 60%;
+        padding-left: 15px;
+      }
+
+      .our_story_title {
+        text-align: center;
+        padding-top: 25px;
+      }
+
+      .our_story_content {
+        .our_story_look {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .rest_information {
+
+      .feedback, .partners {
+        margin: 0 auto;
+      }
+
+      .feedback {
+        width: 96%;
+        .feedback_title {
+          text-align: center;
+        }
+
+        .feedback_form {
+          .form_group {
+            .feedback_form_input, .feedback_form_textarea {
+              min-width: 100%;
+            }
+          }
+        }
+      }
+
+      .partners {
+        width: 70%;
+        .partners_title {
+          padding-top: 25px;
+          text-align: center;
+        }
+
+        .partners_list {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px){
+  .main {
+    .our_story {
+      .our_story_logo {
+        width: 70%;
+      }
+    }
+
+    .our_works {
+      .our_works_title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .our_works_link {
+        width: 100%;
+        text-align: right;
+      }
+
+      .our_works_tape {
+        .works_tape {
+          .works_tape_top {
+            .works_tape_present {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .rest_information {
+      .feedback {
+        width: 90%;
+
+        .feedback_form {
+          .form_group {
+            .feedback_form_input, .feedback_form_textarea {
+              min-width: 100%;
+            }
+          }
+        }
+      }
+      .partners {
+        width: 80%;
+
+        .partners_title {
+          padding-top: 25px;
+          text-align: center;
+        }
+        .partners_list {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import "../variables/variables";
+
+.header {
+  width: 100%;
+  background: url('./../img/background/background-header.png') center center no-repeat;
+  @include background_section;
+  color: $headerTextColor;
+
+  .logotype {
+    padding-top: 14px;
+
+    .logotype_link {
+      @extend .logo_svg_style;
+      text-decoration: none;
+    }
+  }
+
+  .header_menu_open {
+    display: none;
+  }
+
+  .header_menu_button {
+    display: none;
+  }
+
+  .header_navigation {
+    width: 100%;
+
+    .navigation_list {
+      @extend .navigation_list_style;
+
+      .navigation_item {
+        @extend .navigation_item_style;
+
+        .navigation_link {
+          @extend .navigation_link_style;
+        }
+
+        &:hover > .navigation_link {
+          color: $menuActiveColor;
+        }
+      }
+    }
+  }
+
+  .header_content {
+    width: 100%;
+    margin-top: 170px;
+
+    .header_present {
+      .header_title {
+        font-family: "Playfair Display", Arial, sans-serif;
+        text-align: center;
+      }
+    }
+
+    .header_slider {
+      width: 100%;
+      margin-bottom: 68px;
+
+      .header_slider_container {
+        width: inherit;
+
+        .header_slider_content {
+          width: inherit;
+          opacity: 0;
+          display: none;
+
+          .header_slider_text {
+            @extend .font_style_basis;
+            text-align: center;
+            line-height: 1.5;
+          }
+
+          .header_slider_look {
+            @extend .button_style;
+            margin: 50px auto 125px auto;
+          }
+        }
+
+        .header_slide_active {
+          animation: showSlide .5s linear forwards;
+          display: block;
+        }
+      }
+
+      .header_slider_tabs {
+        @include flex_structure(row, space-around, center);
+        width: 70px;
+        margin: 0 auto;
+
+        .header_slider_tab {
+          width: 10px;
+          height: 10px;
+          background: transparent;
+          border: 1px solid $sliderDecoration;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .header_tab_active {
+          background: $sliderDecoration;
+          transition: .5s linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes showSlide {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@import "header_media";

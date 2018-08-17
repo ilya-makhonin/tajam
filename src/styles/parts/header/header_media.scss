@@ -1,0 +1,87 @@
+@import "../variables/variables";
+
+@media screen and (max-width: 992px)  {
+  .header {
+    .logotype {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .logotype {
+      .logotype_link {
+        width: 138px;
+        margin: 10px auto;
+      }
+    }
+
+    .header_navigation {
+      padding-top: 15px;
+    }
+
+    .header_slider {
+      padding: 0 15px;
+
+      .header_slider_tabs {
+        .header_slider_tab {
+          min-width: 20px;
+          min-height: 20px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .header {
+    .section_item {
+      .header_menu_button {
+        display: block;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      #headerMenuOpen:checked ~ .header_navigation {
+        display: block;
+      }
+
+      .header_navigation {
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+        display: none;
+
+        .navigation_list {
+          @include flex_structure(column, flex-start, center);
+          width: 100%;
+          padding: 0;
+
+          .navigation_item {
+            width: 100%;
+            background: $mobileMenuBackground;
+            border-bottom: 1px solid $mobileMenuBorder;
+            padding: 10px 30px 10px 0;
+
+            &:first-child {
+              border-top: 1px solid $mobileMenuBorder;
+            }
+
+            .navigation_link {
+              display: block;
+              width: inherit;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "../variables/variables";
+
+.footer {
+  width: 100%;
+  background: url('./../img/background/background-footer.png') center center no-repeat;
+  @include background_section;
+  color: $footerTextColor;
+  padding: 85px 0 70px 0;
+
+  h3 {
+    font-family: "Roboto Black", Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  .footer_desc_tajam {
+    width: 100%;
+
+    .logotype {
+      @extend .logo_svg_style;
+    }
+
+    .desc_tajam_text {
+      @extend .font_style_basis;
+      line-height: 1.7;
+      margin-top: 25px;
+      box-sizing: border-box;
+      padding-right: 12px;
+    }
+  }
+
+  .our_studio {
+    width: 100%;
+
+    .our_studio_title {  }
+
+    .studio_address {
+      @extend .font_style_basis;
+      font-style: normal;
+      line-height: 1.7;
+      width: inherit;
+
+      .location {
+        background: url("./../img/contacts/location.png") no-repeat;
+        padding: 0 40px 0 27px;
+        margin-bottom: 26px;
+      }
+
+      .phone {
+        background: url("./../img/contacts/phone.png") no-repeat;
+        padding: 0 40px 0 27px;
+      }
+    }
+  }
+
+  .stay_touch {
+    width: 100%;
+
+    .stay_touch_title {  }
+
+    .subscribe_form {
+      width: inherit;
+      @include flex_structure(row, space-between, center);
+
+      .subscribe_group {
+        width: 78%;
+
+        .subscribe_user_input {
+          @extend .input_style;
+          width: 100%;
+          min-width: 100%;
+          color: $footerTextColor;
+          padding: 10px 12px;
+
+          &::placeholder {
+            color: $footerTextColor;
+          }
+        }
+      }
+
+      .send_subscribe {
+        width: 20%;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: $footerSubscribeButton;
+        cursor: pointer;
+        padding: 11px 0;
+      }
+    }
+
+    .social_networks {
+      width: 88%;
+      margin-top: 30px;
+
+      .social_list {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .social_item {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          border: 1px solid $footerSocialIcons;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: .3s linear;
+          box-sizing: border-box;
+          padding: 7px 8px;
+          margin-right: 8px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            border: 1px solid $buttonColor;
+            transition: .3s linear;
+          }
+
+          &:hover > .social_link {
+            color: $buttonColor;
+            transition: .3s linear;
+          }
+
+          .social_link {
+            font-size: 18px;
+            text-decoration: none;
+            color: $footerSocialIcons;
+            transition: .3s linear;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_navigation {
+    width: 100%;
+    margin-top: 75px;
+
+    .navigation_list {
+      @extend .navigation_list_style;
+      width: inherit;
+
+      .navigation_item {
+        @extend .navigation_item_style;
+
+        .navigation_link {
+          @extend .navigation_link_style;
+        }
+
+        &:hover > .navigation_link {
+          color: $menuActiveColor;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 75px;
+  }
+}
+
+@import "footer_media";

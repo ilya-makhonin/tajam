@@ -1,0 +1,126 @@
+@import "../variables/variables";
+
+@media screen and (max-width: 992px) {
+  .footer {
+    .footer_desc_tajam {
+      margin-left: 15px;
+
+      .logotype {
+        margin-left: 50px;
+      }
+
+      .desc_tajam_text {
+        width: 80%;
+        margin: 20px auto;
+      }
+    }
+
+    .our_studio {
+      padding-left: 65px;
+
+      .studio_address {
+        width: 90%;
+        padding-right: 0;
+      }
+    }
+
+    .stay_touch {
+      margin-top: 30px;
+
+      .stay_touch_title {
+        text-align: center;
+      }
+
+      .social_networks {
+        .social_list {
+          @include flex_structure(row, center, center);
+        }
+      }
+    }
+
+    .footer_navigation {
+      margin-top: 50px;
+    }
+
+    .copyright {
+      padding-right: 15px;
+      margin-top: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .footer_desc_tajam {
+      margin-left: 25px;
+
+      .desc_tajam_text {
+        width: 100%;
+      }
+    }
+
+    .our_studio {
+      padding-left: 65px;
+
+      .studio_address {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    .footer_desc_tajam {
+      margin-left: 0;
+
+      .logotype {
+        width: 136px;
+        margin: 0 auto;
+      }
+
+      .desc_tajam_text {
+        width: 86%;
+        text-align: center;
+        margin: 20px auto;
+      }
+    }
+
+    .our_studio {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 25px;
+
+      .our_studio_title {
+        text-align: center;
+        margin: 25px 0 20px;
+      }
+    }
+
+    .footer_navigation {
+      width: 90%;
+      padding: 30px 0 0 50px;
+      margin: 0 auto;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    .footer_navigation {
+      width: 100%;
+      padding: 0;
+      margin: 20px auto;
+    }
+
+    .copyright {
+      margin-top: 0;
+    }
+  }
+}

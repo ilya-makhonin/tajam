@@ -1,0 +1,102 @@
+/*
+  Dependencies
+  @bootstrap styles - Bootstrap Grid
+ */
+
+@import "../../bower_components/bootstrap/dist/css/bootstrap-grid.min.css";
+@import "../packages/font-awesome-4.7.0/css/font-awesome.min.css";
+
+
+// variables this project
+
+@import "parts/variables/variables";
+
+
+/**
+ * Fonts:
+ *    Roboto Regular, Roboto Black, Roboto Bold, Roboto Thin
+ *    Playfair Regular Display, Playfair Display Black, Playfair Display Bold
+ *    Hammersmith One Regular
+ */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("./../fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("./../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  src: url("./../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayBlack";
+  src: url("./../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayBold";
+  src: url("./../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: "HammersmithOne";
+  src: url("./../fonts/Hammersmith_One/HammersmithOne-Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section_item {
+  width: 992px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.header_section_line {
+  width: 50px;
+  border-bottom: 2px solid $titleLineColor;
+  margin: 25px auto;
+}
+
+.errorInputValue {
+  border: 1px solid $inputErrorBorder;
+  box-shadow: 1px 1px 1px 1px $inputErrorShadow, -1px -1px 1px 1px $inputErrorShadow;
+}
+
+@media screen and (max-width: 1020px){
+  .section_item {
+    width: 100%;
+  }
+}
+
+//General Stylization
+
+@import "parts/preloader";
+@import "parts/header/header_style";
+@import "parts/main/main_style";
+@import "parts/footer/footer_style";

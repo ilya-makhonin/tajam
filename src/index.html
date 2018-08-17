@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tajam</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    //= template/elements/preloader.html
+
+    <div class="wrapper">
+
+        <header class="header">
+            //= template/components/header.html
+        </header>
+
+        <main class="main">
+            <section class="our_story">
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-7 col-md-6 col-lg-5">
+                            <div class="our_story_logo">
+                                <img src="./img/logotype/our-about-logo.png" alt="tajam logo" class="our_story_logotype">
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-9 col-md-6 col-lg-7">
+                            <article class="our_story_content">
+                                <h2 class="our_story_title">Our story</h2>
+                                <p class="our_story_text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
+                                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.
+                                </p>
+                                <p class="our_story_text">
+                                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                    Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                                <a class="our_story_look">Learn more</a>
+                            </article>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section class="watch_story">
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="watch_story_pre">
+                                <button class="watch_story_play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <span class="watch_story_signature">Watch our story</span>
+                            </div>
+                            <div class="watch_story_content">
+                                <video class="watch_story_video" id="video" preload>
+                                    <source src="./media/video/presentation.mp4">
+                                </video>
+                                <div id="videoControls" class="video_controls">
+                                    <button id="playBtn">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                    </button>
+                                    <label for="volume"></label>
+                                    <input type="range" id="volume" />
+                                    <span id="sound">
+                                        <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="expertise">
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h2 class="expertise_title">Expertise</h2>
+                            <p class="expertise_subtitle">
+                                Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                            </p>
+                            <div class="header_section_line"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="./img/expertise/web-design.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Web design & development</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="img/expertise/branding-identity.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Branding identity</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="./img/expertise/mobile-app.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Mobile app</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="./img/expertise/search-engine.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Search engine optimization</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="./img/expertise/game-development.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Game development</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-6 col-lg-4">
+                            <div class="expertise_item">
+                                <div class="expertize_item_picture">
+                                    <img src="./img/expertise/made-with-love.png" alt="" class="expertise_item_image">
+                                </div>
+                                <h3 class="expertise_item_title">Made with love</h3>
+                                <p class="expertise_item_content">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="amazing_team">
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h2 class="amazing_team_title">Meet our amazing team</h2>
+                            <p class="amazing_team_subtitle">
+                                Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                            </p>
+                            <div class="header_section_line"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-sm-6 col-md-5 col-lg-3">
+                            <div class="amazing_team_item">
+                                <figure class="amazing_team_group">
+                                    <img src="./img/team/elon-musk.png" alt="" class="amazing_people_photo">
+                                    <figcaption class="amazing_people_signature">
+                                        <h3 class="amazing_people_name">Elon Musk</h3>
+                                        <p class="amazing_people_position">Inventor</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-6 col-md-5 col-lg-3">
+                            <div class="amazing_team_item">
+                                <figure class="amazing_team_group">
+                                    <img src="./img/team/mark-zuckerberg.png" alt="" class="amazing_people_photo">
+                                    <figcaption class="amazing_people_signature">
+                                        <h3 class="amazing_people_name">Mark Zuckerberg</h3>
+                                        <p class="amazing_people_position">Create Facebook</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-6 col-md-5 col-lg-3">
+                            <div class="amazing_team_item">
+                                <figure class="amazing_team_group">
+                                    <img src="./img/team/bill-gates.png" alt="" class="amazing_people_photo">
+                                    <figcaption class="amazing_people_signature">
+                                        <h3 class="amazing_people_name">Bill Gates</h3>
+                                        <p class="amazing_people_position">Create Microsoft</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-6 col-md-5 col-lg-3">
+                            <div class="amazing_team_item">
+                                <figure class="amazing_team_group">
+                                    <img src="./img/team/jeff-bezos.png" alt="" class="amazing_people_photo">
+                                    <figcaption class="amazing_people_signature">
+                                        <h3 class="amazing_people_name">Jeff Bezos</h3>
+                                        <p class="amazing_people_position">Create Amazon</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="amazing_team_past">
+                                <p class="amazing_team_signature">
+                                    Become part of our dream team, let’s join us!
+                                </p>
+                                <a href="/" class="amazing_team_look">We are hiring</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our_works">
+                <div class="section_item">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-4">
+                            <h2 class="our_works_title">Our works</h2>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a href="https://dribbble.com/" class="our_works_link" target="_blank">
+                                See All Project in dribbble
+                                &ensp;
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="our_works_tape">
+                    <div class="works_tape">
+                        <div class="works_tape_top">
+                            <div class="works_tape_present" data-name="Work-1">
+                                <img src="./img/works/work-light.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-2">
+                                <img src="./img/works/work-medium.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-3">
+                                <img src="./img/works/work-little-dark.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-4">
+                                <img src="./img/works/work-dark.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-5">
+                                <img src="./img/works/work-light.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-6">
+                                <img src="./img/works/work-medium.png" alt="Our work" class="our_work_image">
+                            </div>
+                        </div>
+                        <div class="works_tape_bottom">
+                            <div class="works_tape_present" data-name="Work-7">
+                                <img src="./img/works/work-little-dark.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-8">
+                                <img src="./img/works/work-light.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-9">
+                                <img src="./img/works/work-dark.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-10">
+                                <img src="./img/works/work-little-dark.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-11">
+                                <img src="./img/works/work-medium.png" alt="Our work" class="our_work_image">
+                            </div>
+                            <div class="works_tape_present" data-name="Work-12">
+                                <img src="./img/works/work-light.png" alt="Our work" class="our_work_image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="works_look">
+                                <a class="our_works_look">Lear more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <div class="section_item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="review_comments_icon">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="review_slider">
+                                <section class="review_slider_content">
+                                    <div class="review_slider_comment">
+                                        <p class="slider_comment_text">
+                                            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
+                                            a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                            auctor eu in elit.
+                                        </p>
+                                        <div class="review_comment_subtext">
+                                            <h3 class="review_author_name">Lara Andrews</h3>
+                                            <p class="review_author_position">
+                                                Designer
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review_slider_comment">
+                                        <p class="slider_comment_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto
+                                            consequatur dicta dolore ea eius eum excepturi, expedita harum id incidunt,
+                                            inventore magni maxime molestias nobis non perferendis perspiciatis ratione
+                                            reiciendis, repellat reprehenderit sapiente sequi sint veritatis! Assumenda
+                                            blanditiis dolorem id, molestiae molestias porro qui quisquam sint totam veniam!
+                                        </p>
+                                        <div class="review_comment_subtext">
+                                            <h3 class="review_author_name">Fill Johnson</h3>
+                                            <p class="review_author_position">
+                                                Manager
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review_slider_comment review_comment_active start_comment">
+                                        <p class="slider_comment_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur
+                                            corporis doloribus facere inventore natus quo rerum sit suscipit voluptates.
+                                            Ad amet commodi consequatur eligendi fuga fugiat magnam necessitatibus odit
+                                            quaerat quod recusandae reiciendis sit, veritatis! Asperiores beatae doloribus
+                                            eos modi, obcaecati ratione veritatis voluptatem.
+                                        </p>
+                                        <div class="review_comment_subtext">
+                                            <h3 class="review_author_name">Jane Galadriel</h3>
+                                            <p class="review_author_position">
+                                                CEO Tengkurep
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review_slider_comment">
+                                        <p class="slider_comment_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus autem
+                                            corporis culpa cum cumque eos error ex fuga fugiat inventore, itaque iusto
+                                            laudantium natus necessitatibus nesciunt nihil numquam obcaecati ratione
+                                            repellat repudiandae sint soluta totam, voluptates voluptatibus voluptatum?
+                                        </p>
+                                        <div class="review_comment_subtext">
+                                            <h3 class="review_author_name">Emily Kelly</h3>
+                                            <p class="review_author_position">
+                                                Developer
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review_slider_comment">
+                                        <p class="slider_comment_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto
+                                            aspernatur cum fugit molestiae natus sint tempore totam voluptates! Cupiditate
+                                            excepturi labore molestias officiis quaerat! Accusantium adipisci animi
+                                            asperiores at aut cum dolorem doloribus dolorum fuga ipsam laborum nesciunt
+                                            omnis quidem, quo similique sit, tempora veritatis. Alias est fugit nulla
+                                            officia quos recusandae veniam. Molestias.
+                                        </p>
+                                        <div class="review_comment_subtext">
+                                            <h3 class="review_author_name">Max Murphy</h3>
+                                            <p class="review_author_position">
+                                                Analytic
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="review_slider_tabs">
+                                    <div id="reviewSliderLeft">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="review_slider_tab" data-order="0">
+                                        <img src="./img/review/people/one.png" alt="People photo" class="review_slider_people">
+                                    </div>
+                                    <div class="review_slider_tab" data-order="1">
+                                        <img src="./img/review/people/two.png" alt="People photo" class="review_slider_people">
+                                    </div>
+                                    <div class="review_slider_tab review_tab_active" data-order="2">
+                                        <img src="./img/review/people/three.png" alt="People photo" class="review_slider_people">
+                                    </div>
+                                    <div class="review_slider_tab" data-order="3">
+                                        <img src="./img/review/people/four.png" alt="People photo" class="review_slider_people">
+                                    </div>
+                                    <div class="review_slider_tab" data-order="4">
+                                        <img src="./img/review/people/five.png" alt="People photo" class="review_slider_people">
+                                    </div>
+
+                                    <div id="reviewSliderRight">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rest_information">
+                <div class="section_item">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="feedback">
+                                <h2 class="feedback_title">Give us a good news</h2>
+                                <form action="" method="post" class="feedback_form">
+                                    <label class="form_group">
+                                        <input
+                                                type="text" name="user-name"
+                                                class="feedback_form_input" id="userName"
+                                                placeholder="Name"
+                                        >
+                                    </label>
+                                    <label class="form_group">
+                                        <input
+                                                type="text" name="user-email"
+                                                class="feedback_form_input" id="userEmail"
+                                                placeholder="Email"
+                                        >
+                                    </label>
+                                    <label class="form_group">
+                                        <input
+                                                type="text" name="user-subject"
+                                                class="feedback_form_input" id="userSubject"
+                                                placeholder="Subject"
+                                        >
+                                    </label>
+                                    <label class="form_group">
+                                        <textarea
+                                                name="user-comment"
+                                                class="feedback_form_textarea" id="userComment"
+                                                placeholder="Your Message"
+                                        ></textarea>
+                                    </label>
+                                    <input type="submit" name="send-feedback-form"
+                                           id="sendFeedbackForm" value="Submit"
+                                    >
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                            <div class="partners">
+                                <h2 class="partners_title">Our happy client</h2>
+                                <div class="partners_list">
+                                    <a href="https://www.zara.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Zara_Logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://shop.mango.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Logo_of_Mango.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://www.barneys.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Barneys_New_York_Logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://www.gucci.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Gucci_Logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://www.calvinklein.ru/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Calvin_klein_logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://www.nike.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Logo_NIKE.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://www.converse.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Converse_logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://ru.puma.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Puma_Logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://levistrauss.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Levis_logo.png" alt="" class="partners_image">
+                                    </a>
+                                    <a href="https://us.billabong.com/" class="partners_link" target="_blank">
+                                        <img src="./img/client/Billabong.png" alt="" class="partners_image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            //= template/components/footer.html
+        </footer>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

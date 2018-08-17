@@ -1,0 +1,132 @@
+$logoTextColor: #00e0d0;
+$headerTextColor: #ffffff;
+$menuActiveColor: #00e0d0;
+$mobileMenuBackground: rgb(51, 51, 102);
+$mobileMenuBorder: $menuActiveColor - 80;
+$sliderDecoration: #00e0d0;
+$mainTitleColorOfWhiteSection: #413d4b;
+$mainTextColorOfWhiteSection: #333333;
+$mainTitleColorOfPurpleSection: #ffffff;
+$mainTextColorOfPurpleSection: #ffffff;
+$playButtonDecoration: #ffffff;
+$playButtonHover: #231850;
+$backgroundFilter: rgba(51, 51, 102, 0.8);
+$expertizeDecoration: #00e0d0;
+$buttonColor: #00e0d0;
+$buttonHoverColor: #ffffff;
+$inputBorderColor: lightgrey;
+$inputErrorBorder: red;
+$inputErrorShadow: lightcoral;
+$titleLineColor: #c6c4c9;
+$footerSubscribeButton: rgba(161, 154, 180, 0.9);
+$footerSocialIcons: #ffffff;
+$footerTextColor: #ffffff;
+
+
+
+@mixin background_section() {
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $backgroundFilter;
+    z-index: 1;
+  }
+}
+
+@mixin flex_structure ($dir, $justify, $align) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.font_style_basis {
+  font-family: "Roboto Light", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.button_style {
+  font-family: HammersmithOne, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 138px;
+  height: 38px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  color: $buttonColor;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid $buttonColor;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0 12px;
+  text-transform: uppercase;
+  transition: .3s linear;
+  display: block;
+
+  &:hover {
+    transition: .3s linear;
+    background: $buttonColor;
+    color: $buttonHoverColor;
+  }
+}
+
+.logo_svg_style {
+  @include flex_structure(row, flex-start, center);
+
+  .logo_svg {  }
+
+  .logo_signature {
+    font-family: "Roboto Thin", Arial, sans-serif;
+    font-size: 30px;
+    background: linear-gradient(45deg, #02dfd0 33%, #29bece 66%, #4797bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+  }
+}
+
+
+.navigation_list_style {
+  @include flex_structure(row, space-between, center);
+  list-style: none;
+  padding-left: 10px;
+}
+
+.navigation_item_style {
+  display: inline-block;
+  padding: 6px 8px;
+}
+
+.navigation_link_style {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $headerTextColor;
+  text-decoration: none;
+}
+
+
+.input_style {
+  width: 90%;
+  font-family: "Roboto Light", Arial, sans-serif;
+  font-size: 14px;
+  color: $mainTextColorOfWhiteSection;
+  background: transparent;
+  border: 1px solid $inputBorderColor;
+  outline: none;
+  padding: 14px 20px;
+}
+
