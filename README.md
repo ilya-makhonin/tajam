@@ -11,4 +11,4 @@ Frontend часть веб страницы сайта tajam.
 - [ ] Updating styles of the app (stylization) 
 - [ ] Finalize adaptive design 
 
-This TODO is not important at the moment. *This app is not priority.*
+This TODO is not important at the moment. **This app is not priority.**
